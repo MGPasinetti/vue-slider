@@ -14,6 +14,7 @@ const app = new Vue({
     el: `#root`,
     data: {
         activeIndex: 0,
+        // clock: setInterval(changeThumbEvery3Sec, 3000),
         arrSlides: [
             {
                 title: 'Svezia',
@@ -49,6 +50,11 @@ const app = new Vue({
         next() {
             this.activeIndex == this.arrSlides.length - 1 ? this.activeIndex = 0 : this.activeIndex++;
         },
-        
+        // changeThumbEvery3Sec() {
+        //     this.next();
+        // }
     },
+    // created() {
+    //     clearInterval(clock);
+    // },
 });
