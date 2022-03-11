@@ -41,4 +41,21 @@ const app = new Vue({
             },
         ]
     },
+    methods: {
+        previous() {
+            if (this.activeIndex == 0) {
+                this.activeIndex = this.arrSlides.lenght - 1;
+            } else {
+                this.activeIndex--;
+            }
+        },
+        next() {
+            if (this.activeIndex == this.arrSlides.lenght - 1) {
+                this.activeIndex = 0;
+            } else {
+                this.activeIndex++;
+            }
+        },
+        
+    },
 });
