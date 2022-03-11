@@ -44,10 +44,10 @@ const app = new Vue({
     },
     methods: {
         previous() {
-            this.activeIndex == 0 ? this.activeIndex = this.arrSlides.lenght - 1 : this.activeIndex--;
+            this.activeIndex == 0 ? this.activeIndex = this.arrSlides.length - 1 : this.activeIndex--;
         },
         next() {
-            this.activeIndex == this.arrSlides.lenght - 1 ? this.activeIndex = 0 : this.activeIndex++;
+            this.activeIndex == this.arrSlides.length - 1 ? this.activeIndex = 0 : this.activeIndex++;
         },
         
     },
