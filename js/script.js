@@ -1,7 +1,18 @@
-const app = Vue({
+/*
+Descrizione:
+Partendo dai file nello starter implementare la funzione dei bottoni (next e previous) dello slider usando Vue (prima però create la struttura dati).
+Bonus:
+1- al click su una thumb, visualizzare in grande l'immagine corrispondente
+2- applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
+3- quando il mouse va in hover sullo slider, bloccare l'autoplay e farlo riprendere quando esce
+Consiglio del giorno:
+- regola d'oro: riciclare ovunque possibile! E il riciclo spesso va a braccetto con le funzioni! Sapendole sfruttare bene, l'esercizio si riduce a poche righe ;)
+*/
+
+const app = new Vue({
     el: `#root`,
     data: {
-        aciveIndex: 0,
+        activeIndex: 0,
         arrSlides: [
             {
                 title: 'Svezia',
