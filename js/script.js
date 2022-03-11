@@ -1,6 +1,7 @@
 /*
 Descrizione:
 Partendo dai file nello starter implementare la funzione dei bottoni (next e previous) dello slider usando Vue (prima però create la struttura dati).
+
 Bonus:
 1- al click su una thumb, visualizzare in grande l'immagine corrispondente
 2- applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
@@ -43,18 +44,10 @@ const app = new Vue({
     },
     methods: {
         previous() {
-            if (this.activeIndex == 0) {
-                this.activeIndex = this.arrSlides.lenght - 1;
-            } else {
-                this.activeIndex--;
-            }
+            this.activeIndex == 0 ? this.activeIndex = this.arrSlides.lenght - 1 : this.activeIndex--;
         },
         next() {
-            if (this.activeIndex == this.arrSlides.lenght - 1) {
-                this.activeIndex = 0;
-            } else {
-                this.activeIndex++;
-            }
+            this.activeIndex == this.arrSlides.lenght - 1 ? this.activeIndex = 0 : this.activeIndex++;
         },
         
     },
