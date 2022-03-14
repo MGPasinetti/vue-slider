@@ -10,7 +10,8 @@
 </head>
 <body>
 	<div id="root">
-		<div class="slider">
+		<div v-if="arrSlides === null">Dati in scaricamento</div>
+		<div class="slider" v-else @mouseover="stopSlider" @mouseout="startSlider">
 			<div class="slide">
 				<img :src="arrSlides[activeIndex].img" :alt="arrSlides[activeIndex].title">
 				<div class="slide-contents">
